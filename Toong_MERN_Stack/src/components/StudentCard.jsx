@@ -9,7 +9,7 @@ function StudentCard({name, age, birthday, studentNumber, course, section}) {
             <p>Course:          {course}</p>
             <p>Section:         {section}</p>
         </div>
-    )
+    );
 }
 
 export default StudentCard;
