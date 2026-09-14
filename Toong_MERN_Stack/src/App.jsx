@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Students from "./pages/Students";
+import AddStudent from "./pages/AddStudent";
 import Navbar from "./components/Navbar";
 
 export default function App(){
@@ -11,6 +12,7 @@ export default function App(){
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/students" element={<Students />} />
+                    <Route path="/add-student" element={<AddStudent />} />
                 </Routes>
             </BrowserRouter>
         </div>
