@@ -6,6 +6,7 @@ function StudentCard({student}) {
             <p>Student Number:  {student.studentNumber}</p>
             <p>Course:          {student.course}</p>
             <p>Section:         {student.section}</p>
+            <p>Sex:             {student.sex}</p>
             <p>Age:             {student.age}</p>
             <p>Birthday:        {student.birthday}</p>
         </div>
