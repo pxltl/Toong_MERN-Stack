@@ -1,13 +1,13 @@
-function StudentCard({name, age, birthday, studentNumber, course, section}) {
+function StudentCard({student}) {
     return (
         <div>  
-            <h1>Student Information</h1>
-            <p>Name:            {name}</p>
-            <p>Age:             {age}</p>
-            <p>Birthday:        {birthday}</p>
-            <p>Student Number:  {studentNumber}</p>
-            <p>Course:          {course}</p>
-            <p>Section:         {section}</p>
+            <h1>Student #{student.id}</h1>
+            <p>Name:            {student.name}</p>
+            <p>Student Number:  {student.studentNumber}</p>
+            <p>Course:          {student.course}</p>
+            <p>Section:         {student.section}</p>
+            <p>Age:             {student.age}</p>
+            <p>Birthday:        {student.birthday}</p>
         </div>
     );
 }

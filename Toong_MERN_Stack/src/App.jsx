@@ -1,19 +1,18 @@
-import StudentCard from "./components/StudentCard";
-import Subjects from "./components/Subjects";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Students from "./pages/Students";
+import Navbar from "./components/Navbar";
 
-function App(){
+export default function App(){
     return(
-        <div>
-            <div>
-            <StudentCard name="Aimiel" age={26} birthday="Kanina" studentNumber="00001234" course="BSIT" section="3-7"></StudentCard>
-        </div>
-        <h1>Subjects</h1>
-        <div>
-            <Subjects subjectId="BSIT-101" subjectName="Web Development" instructor="Sir John"></Subjects>
-            <Subjects subjectId="BSIT-102" subjectName="Database Management" instructor="Ma'am Jane"></Subjects>
-            <Subjects subjectId="BSIT-103" subjectName="Mobile App Development" instructor="Sir Mark"></Subjects>
-        </div>
+        <div className="w-screen h-screen">
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/students" element={<Students />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }
-export default App;
